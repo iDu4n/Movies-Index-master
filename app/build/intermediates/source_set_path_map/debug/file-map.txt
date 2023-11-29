@@ -1,0 +1,52 @@
+com.sg.moviesindex.app-jetified-lifecycle-process-2.6.1-0 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\02ffa5138e25a88374e993c521fbf237\transformed\jetified-lifecycle-process-2.6.1\res
+com.sg.moviesindex.app-lifecycle-livedata-core-2.6.1-1 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\0afc31b3693e8803258c6fa6c29137fb\transformed\lifecycle-livedata-core-2.6.1\res
+com.sg.moviesindex.app-cardview-1.0.0-2 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\11e4cd532030db805d2428ffca599990\transformed\cardview-1.0.0\res
+com.sg.moviesindex.app-constraintlayout-2.1.4-3 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\1bf94c9fa7f6ac1eca5145c794a9d330\transformed\constraintlayout-2.1.4\res
+com.sg.moviesindex.app-jetified-startup-runtime-1.1.1-4 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\20d92be6ad4e379983e4a535c5d84a12\transformed\jetified-startup-runtime-1.1.1\res
+com.sg.moviesindex.app-transition-1.2.0-5 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\210c905c6657e4159140618f1c886b9a\transformed\transition-1.2.0\res
+com.sg.moviesindex.app-databinding-runtime-8.0.2-6 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3432eea0f518045ddd858dd6123afadb\transformed\databinding-runtime-8.0.2\res
+com.sg.moviesindex.app-databinding-adapters-8.0.2-7 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3932ae4a1f9abedcc9faab0400f492cc\transformed\databinding-adapters-8.0.2\res
+com.sg.moviesindex.app-recyclerview-1.3.1-8 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3bd6959ea84c6555f8730c5e8900f80f\transformed\recyclerview-1.3.1\res
+com.sg.moviesindex.app-jetified-play-services-base-18.0.1-9 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3c82a6c978b371f28c43af08018c8944\transformed\jetified-play-services-base-18.0.1\res
+com.sg.moviesindex.app-jetified-core-ktx-1.12.0-beta01-10 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3cb12f3eb084cb82c46150c1527a3f89\transformed\jetified-core-ktx-1.12.0-beta01\res
+com.sg.moviesindex.app-sqlite-2.4.0-beta01-11 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3eac103ece0c85aca1cf29f1c48a16a1\transformed\sqlite-2.4.0-beta01\res
+com.sg.moviesindex.app-jetified-play-services-basement-18.1.0-12 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\456d0e43cfc638357ea512a9ebc444d3\transformed\jetified-play-services-basement-18.1.0\res
+com.sg.moviesindex.app-core-runtime-2.2.0-13 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4c0a01d303ff5636adc678f5e45dd036\transformed\core-runtime-2.2.0\res
+com.sg.moviesindex.app-lifecycle-runtime-2.6.1-14 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4cb08ce1a1b79e7d49244fbf080a76c4\transformed\lifecycle-runtime-2.6.1\res
+com.sg.moviesindex.app-jetified-firebase-common-20.4.2-15 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\res
+com.sg.moviesindex.app-jetified-savedstate-1.2.1-16 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\5568904eda01833d7bbff4050ebdcb44\transformed\jetified-savedstate-1.2.1\res
+com.sg.moviesindex.app-appcompat-1.7.0-alpha03-17 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\5c3bdd2a87e17a7230530d18a11e57ff\transformed\appcompat-1.7.0-alpha03\res
+com.sg.moviesindex.app-jetified-activity-1.7.0-18 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\5e3e97e7093d99014155b00a9dd58f77\transformed\jetified-activity-1.7.0\res
+com.sg.moviesindex.app-jetified-emoji2-views-helper-1.3.0-19 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\61213feb5e85badbe6b1d4376eb78986\transformed\jetified-emoji2-views-helper-1.3.0\res
+com.sg.moviesindex.app-lifecycle-livedata-2.6.1-20 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\66ef0eabdadc2f3dbe3e338b9e53f44e\transformed\lifecycle-livedata-2.6.1\res
+com.sg.moviesindex.app-jetified-sparkbutton-1.0.6-21 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\6a78ccdc124f5a90b2d54c001425c629\transformed\jetified-sparkbutton-1.0.6\res
+com.sg.moviesindex.app-jetified-CircularProgressIndicator-1.3.0-22 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\6d863030d8e732b43ac5a1d79bfdf026\transformed\jetified-CircularProgressIndicator-1.3.0\res
+com.sg.moviesindex.app-room-runtime-2.6.0-beta01-23 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\res
+com.sg.moviesindex.app-jetified-core-0.9.6.0-24 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7f0534ad198822bd9b221b2911f5c0c7\transformed\jetified-core-0.9.6.0\res
+com.sg.moviesindex.app-lifecycle-viewmodel-2.6.1-25 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\80291ca6e99c478e24f4c52875263dd4\transformed\lifecycle-viewmodel-2.6.1\res
+com.sg.moviesindex.app-jetified-customview-poolingcontainer-1.0.0-26 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8abf785ba514a14974348d80e58ca93b\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.sg.moviesindex.app-jetified-profileinstaller-1.3.0-27 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\res
+com.sg.moviesindex.app-jetified-viewpager2-1.1.0-beta02-28 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\abde1a3db155775c6eb43a48cf66b765\transformed\jetified-viewpager2-1.1.0-beta02\res
+com.sg.moviesindex.app-browser-1.4.0-29 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\ae6b409112dc561d51cf57ef4f5298a7\transformed\browser-1.4.0\res
+com.sg.moviesindex.app-jetified-glide-4.12.0-30 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\aed92cd69b80b3ccb881977c9dd7a149\transformed\jetified-glide-4.12.0\res
+com.sg.moviesindex.app-media-1.0.0-31 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\bb3691590f190e4cd877d593db7e8337\transformed\media-1.0.0\res
+com.sg.moviesindex.app-material-1.3.0-rc01-32 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\bb79c2b2e8fa84f9a8e9e880501d8f3f\transformed\material-1.3.0-rc01\res
+com.sg.moviesindex.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-33 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\c803a338ab5db23e292a1f1de8e57124\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
+com.sg.moviesindex.app-jetified-lifecycle-service-2.6.1-34 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\cac2feba2be4a27cf55e16507e1123b8\transformed\jetified-lifecycle-service-2.6.1\res
+com.sg.moviesindex.app-jetified-loading-button-android-2.2.0-35 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\cc658346b5211700ee41c492fb5d3e22\transformed\jetified-loading-button-android-2.2.0\res
+com.sg.moviesindex.app-fragment-1.5.4-36 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\d125e1b79669a5ee4853df46b5532b65\transformed\fragment-1.5.4\res
+com.sg.moviesindex.app-jetified-appcompat-resources-1.7.0-alpha03-37 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\d712f6d4d8fe99989772f98e4b5f7eb2\transformed\jetified-appcompat-resources-1.7.0-alpha03\res
+com.sg.moviesindex.app-core-1.12.0-beta01-38 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\e2df28f0544d89617eaee6aa563ed92f\transformed\core-1.12.0-beta01\res
+com.sg.moviesindex.app-sqlite-framework-2.4.0-beta01-39 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\ed20f13ced54df68937b52e47c51eaf3\transformed\sqlite-framework-2.4.0-beta01\res
+com.sg.moviesindex.app-jetified-library-1.4.2-40 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\ed7f3f3ac28ec80af88a4687cf95aa81\transformed\jetified-library-1.4.2\res
+com.sg.moviesindex.app-jetified-emoji2-1.3.0-41 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\res
+com.sg.moviesindex.app-jetified-annotation-experimental-1.3.0-42 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\f03de26aeec1c13011b4c5d9b7dc5447\transformed\jetified-annotation-experimental-1.3.0\res
+com.sg.moviesindex.app-coordinatorlayout-1.1.0-43 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\f8aaadd21cf8671f5ef0e2a1107334e2\transformed\coordinatorlayout-1.1.0\res
+com.sg.moviesindex.app-pngs-44 D:\Android Projects\Movies-Index-master\app\build\generated\res\pngs\debug
+com.sg.moviesindex.app-res-45 D:\Android Projects\Movies-Index-master\app\build\generated\res\processDebugGoogleServices
+com.sg.moviesindex.app-resValues-46 D:\Android Projects\Movies-Index-master\app\build\generated\res\resValues\debug
+com.sg.moviesindex.app-mergeDebugResources-47 D:\Android Projects\Movies-Index-master\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.sg.moviesindex.app-mergeDebugResources-48 D:\Android Projects\Movies-Index-master\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.sg.moviesindex.app-merged_res-49 D:\Android Projects\Movies-Index-master\app\build\intermediates\merged_res\debug
+com.sg.moviesindex.app-debug-50 D:\Android Projects\Movies-Index-master\app\src\debug\res
+com.sg.moviesindex.app-main-51 D:\Android Projects\Movies-Index-master\app\src\main\res

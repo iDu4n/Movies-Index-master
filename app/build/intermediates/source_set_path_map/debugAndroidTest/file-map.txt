@@ -1,0 +1,6 @@
+com.sg.moviesindex.test.app-jetified-core-1.5.0-0 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\87dfb6842f3153744176d385fcb29cad\transformed\jetified-core-1.5.0\res
+com.sg.moviesindex.test.app-jetified-annotation-experimental-1.3.0-1 C:\Program Files\Android\Android Studio\jre\caches\transforms-3\f03de26aeec1c13011b4c5d9b7dc5447\transformed\jetified-annotation-experimental-1.3.0\res
+com.sg.moviesindex.test.app-androidTest-2 D:\Android Projects\Movies-Index-master\app\build\generated\res\resValues\androidTest\debug
+com.sg.moviesindex.test.app-mergeDebugAndroidTestResources-3 D:\Android Projects\Movies-Index-master\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.sg.moviesindex.test.app-mergeDebugAndroidTestResources-4 D:\Android Projects\Movies-Index-master\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.sg.moviesindex.test.app-merged_res-5 D:\Android Projects\Movies-Index-master\app\build\intermediates\merged_res\debugAndroidTest

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.sg.moviesindex.app-mergeDebugResources-47:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Program Files\\Android\\Android Studio\\jre\\caches\\transforms-3\\5c3bdd2a87e17a7230530d18a11e57ff\\transformed\\appcompat-1.7.0-alpha03\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

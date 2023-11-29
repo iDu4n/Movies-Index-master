@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">1084758227482</string>
+    <string name="google_api_key" translatable="false">AIzaSyBTQy3AgaTrlV98Y-cCrxnZNytCSYq87Ik</string>
+    <string name="google_app_id" translatable="false">1:1084758227482:android:e2f3819d64347a129cafa3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBTQy3AgaTrlV98Y-cCrxnZNytCSYq87Ik</string>
+    <string name="google_storage_bucket" translatable="false">movies-index-c8fc1.appspot.com</string>
+    <string name="project_id" translatable="false">movies-index-c8fc1</string>
+</resources>

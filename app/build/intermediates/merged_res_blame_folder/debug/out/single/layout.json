@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\app_bar_main.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\activity_main.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\nav_header_main.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\fragment_movies.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\fragment_movies.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\content_movies_info.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\content_movies_info.xml"
+    },
+    {
+        "merged": "com.sg.moviesindex.app-mergeDebugResources-48:/layout/content_movies_info.xml",
+        "source": "com.sg.moviesindex.app-main-51:/layout/content_movies_info.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\fragment_favourite_movies.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\fragment_favourite_movies.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\activity_movies_info.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\activity_movies_info.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\content_main.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\cast_list_item.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\cast_list_item.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\movie_list_item.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\movie_list_item.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\torrent_list_items_layout.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\torrent_list_items_layout.xml"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-mergeDebugResources-48:\\layout\\review_list_item.xml",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\review_list_item.xml"
+    }
+]

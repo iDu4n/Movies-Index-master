@@ -2301,6 +2301,7 @@ id llError
 id llMovieRating
 id loadmpre_progressbar
 id loginNow
+id logout
 id masked
 id match_constraint
 id match_parent

@@ -69,7 +69,7 @@ import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
 public class MoviesInfo extends AppCompatActivity implements TorrentFetcherService.OnCompleteListener {
-    Button button;
+    private Button button;
     private Movie movie;
     private Boolean bool;
     private ActivityMoviesInfoBinding activityMoviesInfoBinding;
@@ -140,6 +140,7 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
         setProgressBar();
         getReviews(1);
         getCasts();
+
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -151,6 +152,13 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
                 }
             }
         });
+
+        /*button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+            }
+        });*/
 
         activityMoviesInfoBinding.secondaryLayout.sparkButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -176,6 +184,7 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
             }
         });
     }
+
 
     public void setProgressBar() {
         CircularProgressIndicator circleProgressBar = activityMoviesInfoBinding.secondaryLayout.circularProgress;

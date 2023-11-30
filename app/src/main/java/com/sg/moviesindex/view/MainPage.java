@@ -45,6 +45,7 @@ import io.reactivex.disposables.CompositeDisposable;
 public class MainPage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private Button logout;
     private FirebaseAuth auth;
     private TextView textView;
     private FirebaseUser user;
@@ -76,17 +77,26 @@ public class MainPage extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
-       /* if(user == null) {
+        if(user == null) {
+           Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+           startActivity(intent);
+           finish();
+       } else {
+            /*textView.setText(user.getEmail());*/
+        }
+        fragmentManager = getSupportFragmentManager();
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View navHeader = navigationView.getHeaderView(0);
+        logout = navHeader.findViewById(R.id.logout);
+        logout.setOnClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(intent);
             finish();
-        } else {
-            textView.setText(user.getEmail());
-        }*/
-        fragmentManager = getSupportFragmentManager();
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        });
         progressBar = findViewById(R.id.progressBar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -100,11 +110,25 @@ public class MainPage extends AppCompatActivity
         progressBar.setIndeterminate(true);
         linearLayoutError = findViewById(R.id.llError);
         refreshButtonError = findViewById(R.id.buttonllError);
+//        logout = findViewById(R.id.logout);
+
+/*        logout.setOnClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
+            finish();
+        });*/
+
+
         navigationView.getMenu().getItem(0).setChecked(true);
         fetchFirstTimeDataService = new FetchFirstTimeDataService(linearLayoutError, refreshButtonError, progressBar, compositeDisposable, fragmentManager, MainPage.this);
         fetchFirstTimeDataService.getDataFirst();
         genresList = new FetchGenresListService(linearLayoutError, refreshButtonError, MainPage.this, compositeDisposable, fetchFirstTimeDataService, progressBar);
         requestNotificationPermissions();
+    }
+
+    void setNavHeader(){
+
     }
 
     @TargetApi(Build.VERSION_CODES.TIRAMISU)

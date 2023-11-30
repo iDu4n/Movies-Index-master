@@ -36,6 +36,15 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Logout"
+            android:textColor="@color/tmdb_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 </layout>

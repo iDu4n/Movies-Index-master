@@ -4,6 +4,7 @@ package com.sg.moviesindex.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,10 +18,14 @@ public abstract class NavHeaderMainBinding extends ViewDataBinding {
   @NonNull
   public final ImageView imageView;
 
+  @NonNull
+  public final Button logout;
+
   protected NavHeaderMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView imageView) {
+      ImageView imageView, Button logout) {
     super(_bindingComponent, _root, _localFieldCount);
     this.imageView = imageView;
+    this.logout = logout;
   }
 
   @NonNull

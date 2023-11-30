@@ -2300,6 +2300,7 @@ int id llError 0x7f0a0117
 int id llMovieRating 0x7f0a0118
 int id loadmpre_progressbar 0x7f0a0119
 int id loginNow 0x7f0a011a
+int id logout 0x7f0a024f
 int id masked 0x7f0a011b
 int id match_constraint 0x7f0a011c
 int id match_parent 0x7f0a011d

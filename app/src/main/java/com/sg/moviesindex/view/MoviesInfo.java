@@ -17,13 +17,16 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
@@ -36,7 +39,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -58,6 +60,7 @@ import com.sg.moviesindex.model.tmdb.CastsList;
 import com.sg.moviesindex.model.tmdb.Genre;
 import com.sg.moviesindex.model.tmdb.Movie;
 import com.sg.moviesindex.model.tmdb.Review;
+import com.sg.moviesindex.model.tmdb.ReviewApp;
 import com.sg.moviesindex.model.tmdb.ReviewsList;
 import com.sg.moviesindex.service.TorrentDownloaderService;
 import com.sg.moviesindex.service.TorrentFetcherService;
@@ -73,6 +76,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator;
@@ -108,6 +112,9 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
     final static int MY_PERMISSIONS_REQUESTS_STORAGE_PERMISSIONS = 3;
     private TorrentFetcherService torrentFetcherService;
     private TextInputEditText rating;
+    private Button buttonReview;
+    private TextInputEditText review;
+    private ListView reviewsListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +144,7 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
         rating = findViewById(R.id.ratingApp);
         buttonRate = findViewById(R.id.buttonRate);
 
+
         buttonRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -157,6 +165,27 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
                 else {
                     Toast.makeText(MoviesInfo.this, "Incorrect input", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        reviewsListView = findViewById(R.id.reviewsListView);
+        review = findViewById(R.id.reviewApp);
+        buttonReview = findViewById(R.id.buttonReview);
+
+        buttonReview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String reviewSpring;
+                reviewSpring = String.valueOf(review.getText());
+
+                if(TextUtils.isEmpty(reviewSpring)) {
+                    Toast.makeText(MoviesInfo.this, "Enter review", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                    databaseInputReview(reviewSpring);
+                    Toast.makeText(MoviesInfo.this, "Successful", Toast.LENGTH_SHORT).show();
+                    recreate();
             }
         });
 
@@ -228,6 +257,7 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
                 }
             }
         });
+        getAppReviews();
     }
 
     public void databaseInputRating(int rating) {
@@ -242,6 +272,28 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
             DatabaseReference myRefEmail = database.getReference();
 
             myRefEmail.child("Rate").child(id).child(uid).child("Rating").setValue(rating);
+
+        } else {
+
+        }
+
+    }
+
+    public void databaseInputReview(String review) {
+
+        String id = movie.getId().toString();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if (currentUser != null) {
+            String uid = currentUser.getUid();
+            String email = currentUser.getEmail();
+            FirebaseDatabase database = FirebaseDatabase.getInstance("https://movies-index-c8fc1-default-rtdb.europe-west1.firebasedatabase.app/");
+            DatabaseReference myRefEmail = database.getReference();
+
+
+            myRefEmail.child("Review").child(id).child(uid).child("review").setValue(review);
+            myRefEmail.child("Review").child(id).child(uid).child("email").setValue(email);
 
         } else {
 
@@ -326,6 +378,50 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
             });
 
         return 0;
+    }
+
+    private void getAppReviews() {
+        String id = movie.getId().toString();
+
+        recyclerViewReviews.setAdapter(reviewsAdapter);
+        recyclerViewReviews.addOnScrollListener(paginationScrollListenerReviews);
+
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance("https://movies-index-c8fc1-default-rtdb.europe-west1.firebasedatabase.app/").getReference();
+        Query dataQuery = databaseReference.child("Review").child(id);
+        DatabaseReference usersRef;
+        usersRef = FirebaseDatabase.getInstance().getReference().child("users");
+        dataQuery.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                List<ReviewApp> reviewList = new ArrayList<>();
+
+                for (DataSnapshot reviewSnapshot : dataSnapshot.getChildren()) {
+                    String email = reviewSnapshot.child("email").getValue(String.class);
+
+                    String userId = reviewSnapshot.getKey();
+                    String reviewText = reviewSnapshot.child("review").getValue(String.class);
+
+                    ReviewApp review = new ReviewApp(email, reviewText);
+                    reviewList.add(review);
+                }
+
+                // Отобразить отзывы в списке
+                displayReviews(reviewList);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                // Обработка ошибок при получении данных
+            }
+        });
+    }
+
+    private void displayReviews(List<ReviewApp> reviewList) {
+        // Создать адаптер для отображения данных в ListView
+        ArrayAdapter<ReviewApp> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, reviewList);
+
+        // Установить адаптер в ListView
+        reviewsListView.setAdapter(adapter);
     }
 
     public void getFullInformation() {

@@ -2,16 +2,28 @@ package com.sg.moviesindex.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.auth.FirebaseUser;
 import com.sg.moviesindex.R;
 import com.sg.moviesindex.databinding.ReviewListItemBinding;
 import com.sg.moviesindex.model.tmdb.Review;
 import com.sg.moviesindex.model.tmdb.ReviewsList;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
 
 public class ReviewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final ReviewsList reviewsList;
@@ -50,6 +62,7 @@ public class ReviewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public int getItemCount() {
         return reviewsList == null || reviewsList.getResults() == null ? 0 : reviewsList.getResults().size();
     }
+
 
 }
 

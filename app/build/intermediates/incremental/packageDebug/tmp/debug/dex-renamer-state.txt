@@ -1,4 +1,4 @@
-#Sun Dec 03 05:53:33 MSK 2023
+#Mon Dec 04 02:34:10 MSK 2023
 base.0=D\:\\Android Projects\\Movies-Index-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\Android Projects\\Movies-Index-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=D\:\\Android Projects\\Movies-Index-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex

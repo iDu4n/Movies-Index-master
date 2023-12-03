@@ -32,6 +32,8 @@
     <string name="rate">RATE</string>
     <string name="rate_film">rate film</string>
     <string name="int_0_10">int 0-10</string>
+    <string name="write_review_for_the_movie">write review for the movie</string>
+    <string name="review">Review</string>
 
 
 </resources>

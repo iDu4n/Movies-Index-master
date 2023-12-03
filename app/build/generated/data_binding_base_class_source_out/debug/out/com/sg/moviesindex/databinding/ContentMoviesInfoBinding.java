@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,6 +41,9 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
   public final Button buttonRate;
 
   @NonNull
+  public final Button buttonReview;
+
+  @NonNull
   public final TextView casts;
 
   @NonNull
@@ -61,7 +65,13 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
   public final TextInputEditText ratingApp;
 
   @NonNull
+  public final TextInputEditText reviewApp;
+
+  @NonNull
   public final TextView reviews;
+
+  @NonNull
+  public final ListView reviewsListView;
 
   @NonNull
   public final RecyclerView rvCasts;
@@ -107,17 +117,19 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
 
   protected ContentMoviesInfoBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ConstraintLayout ad, CircularProgressButton btnId, ImageView button1, Button buttonRate,
-      TextView casts, LinearLayout castsLayout, ChipGroup chipGroup,
+      Button buttonReview, TextView casts, LinearLayout castsLayout, ChipGroup chipGroup,
       CircularProgressIndicator circularProgress, CircularProgressIndicator circularProgressAppRate,
-      LinearLayout llMovieRating, TextInputEditText ratingApp, TextView reviews,
-      RecyclerView rvCasts, RecyclerView rvReviews, SparkButton sparkButton, TextView tvGenre,
-      TextView tvLanguage, TextView tvMovieTitle, TextView tvOverview, TextView tvPlotsynopsis,
-      TextView tvPopularity, TextView tvReleaseDate, TextView tvStatus) {
+      LinearLayout llMovieRating, TextInputEditText ratingApp, TextInputEditText reviewApp,
+      TextView reviews, ListView reviewsListView, RecyclerView rvCasts, RecyclerView rvReviews,
+      SparkButton sparkButton, TextView tvGenre, TextView tvLanguage, TextView tvMovieTitle,
+      TextView tvOverview, TextView tvPlotsynopsis, TextView tvPopularity, TextView tvReleaseDate,
+      TextView tvStatus) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ad = ad;
     this.btnId = btnId;
     this.button1 = button1;
     this.buttonRate = buttonRate;
+    this.buttonReview = buttonReview;
     this.casts = casts;
     this.castsLayout = castsLayout;
     this.chipGroup = chipGroup;
@@ -125,7 +137,9 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
     this.circularProgressAppRate = circularProgressAppRate;
     this.llMovieRating = llMovieRating;
     this.ratingApp = ratingApp;
+    this.reviewApp = reviewApp;
     this.reviews = reviews;
+    this.reviewsListView = reviewsListView;
     this.rvCasts = rvCasts;
     this.rvReviews = rvReviews;
     this.sparkButton = sparkButton;

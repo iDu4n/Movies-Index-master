@@ -2131,6 +2131,7 @@ id butt
 id button1
 id buttonPanel
 id buttonRate
+id buttonReview
 id buttonllError
 id cache_measures
 id callMeasure
@@ -2427,13 +2428,16 @@ id rectangles
 id registerNow
 id report_drawn
 id reverseSawtooth
+id reviewApp
 id reviews
+id reviewsListView
 id right
 id rightToLeft
 id right_icon
 id right_side
 id round
 id rounded
+id row
 id row_index_key
 id rv2
 id rvCasts
@@ -2785,6 +2789,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout review_list_item
+layout row
 layout search_list
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -2968,6 +2973,7 @@ string project_id
 string rate
 string rate_film
 string return_to_login
+string review
 string search_any_movie
 string search_menu_title
 string sort_by_popularity
@@ -2977,6 +2983,7 @@ string title_activity_main
 string title_activity_movies_info
 string top_rated_movies
 string upcoming_movies
+string write_review_for_the_movie
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

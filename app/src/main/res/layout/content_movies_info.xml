@@ -105,6 +105,46 @@
                     app:gradientType="linear"
                     app:gradientEndColor="@color/colorAccent" />
 
+                <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                    android:id="@+id/circularProgressAppRate"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    app:direction="clockwise"
+                    app:dotColor="?colorPrimary"
+                    app:dotWidth="8dp"
+                    app:drawDot="true"
+                    app:enableProgressAnimation="true"
+                    app:formattingPattern="&#37;.01f"
+                    app:progressBackgroundColor="?colorAccent"
+                    app:progressBackgroundStrokeWidth="4dp"
+                    app:progressCap="round"
+                    app:progressColor="?colorPrimary"
+                    app:progressStrokeWidth="8dp"
+                    app:startAngle="270"
+                    app:textColor="@color/design_default_color_on_secondary"
+                    app:textSize="18sp"
+                    app:fillBackground="false"
+                    app:gradientType="linear"
+                    app:gradientEndColor="@color/colorAccent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ratingApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/rate_film"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/buttonRate"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate"/>
+
             </LinearLayout>
 
 

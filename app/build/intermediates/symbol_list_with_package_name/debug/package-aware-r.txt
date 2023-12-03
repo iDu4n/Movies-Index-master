@@ -1957,7 +1957,6 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_recently_released_movies
 drawable ic_upcoming_movies
-drawable india
 drawable loading
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -2131,6 +2130,7 @@ id btn_register
 id butt
 id button1
 id buttonPanel
+id buttonRate
 id buttonllError
 id cache_measures
 id callMeasure
@@ -2156,6 +2156,7 @@ id chronometer
 id circle_center
 id circular
 id circularProgress
+id circularProgressAppRate
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2420,6 +2421,7 @@ id progress_circular
 id progress_horizontal
 id radial
 id radio
+id ratingApp
 id ratio
 id rectangles
 id registerNow
@@ -2894,6 +2896,7 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string in_india
+string int_0_10
 string item_view_role_description
 string login
 string logout
@@ -2962,6 +2965,8 @@ string path_password_strike_through
 string play_dumb_charades
 string popular_movies
 string project_id
+string rate
+string rate_film
 string return_to_login
 string search_any_movie
 string search_menu_title

@@ -1,5 +1,7 @@
 package com.sg.moviesindex.view;
 
+import static androidx.constraintlayout.widget.Constraints.TAG;
+
 import android.Manifest;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -12,12 +14,16 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
@@ -30,9 +36,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.sg.moviesindex.R;
 import com.sg.moviesindex.adapter.CastsAdapter;
 import com.sg.moviesindex.adapter.ReviewsAdapter;
@@ -53,6 +68,7 @@ import com.sg.moviesindex.viewmodel.MainViewModel;
 import com.varunest.sparkbutton.SparkButton;
 
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -69,7 +85,7 @@ import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
 public class MoviesInfo extends AppCompatActivity implements TorrentFetcherService.OnCompleteListener {
-    private Button button;
+    private Button buttonRate;
     private Movie movie;
     private Boolean bool;
     private ActivityMoviesInfoBinding activityMoviesInfoBinding;
@@ -87,15 +103,18 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
     private RecyclerView recyclerViewReviews;
     private RecyclerView recyclerViewCasts;
     private CircularProgressButton btnSignIn;
+    private CircularProgressButton btnSignIn2;
     private ChipGroup chipGroup;
     final static int MY_PERMISSIONS_REQUESTS_STORAGE_PERMISSIONS = 3;
     private TorrentFetcherService torrentFetcherService;
+    private TextInputEditText rating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movies_info);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        View content_movies_info = findViewById(R.id.secondary_layout);
         View parentLayout = findViewById(android.R.id.content);
         mainViewModel = new ViewModelProvider(this).get(MainViewModel.class);
         tMDbService = RetrofitInstance.getTMDbService(MoviesInfo.this);
@@ -115,6 +134,31 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
         recyclerViewCasts.setLayoutManager(linearLayoutManagerCasts);
         recyclerViewCasts.setItemAnimator(new DefaultItemAnimator());
         Intent i = getIntent();
+        rating = findViewById(R.id.ratingApp);
+        buttonRate = findViewById(R.id.buttonRate);
+
+        buttonRate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String ratingString;
+                ratingString = String.valueOf(rating.getText());
+
+                if(TextUtils.isEmpty(ratingString)) {
+                    Toast.makeText(MoviesInfo.this, "Enter rating", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (ratingString.equals("0") || ratingString.equals("1") || ratingString.equals("2") || ratingString.equals("3") || ratingString.equals("4") || ratingString.equals("5") || ratingString.equals("6") || ratingString.equals("7") || ratingString.equals("8") || ratingString.equals("9") || ratingString.equals("10")) {
+                    int ratingInt = Integer.parseInt(ratingString);
+                    databaseInputRating(ratingInt);
+                    Toast.makeText(MoviesInfo.this, "Successful", Toast.LENGTH_SHORT).show();
+                    recreate();
+                }
+                else {
+                    Toast.makeText(MoviesInfo.this, "Incorrect input", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         if (i.hasExtra("movie")) {
             movie = i.getParcelableExtra("movie");
@@ -134,11 +178,12 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
             activityMoviesInfoBinding.secondaryLayout.setLocale(new Locale(movie.getOriginalLanguage()).getDisplayLanguage(Locale.ENGLISH));
             chipGroup = activityMoviesInfoBinding.secondaryLayout.chipGroup;
         }
+
         getFullInformation();
         getParcelableData();
         setPaginationListeners();
         setProgressBar();
-        getReviews(1);
+        getRatingAverage();
         getCasts();
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
@@ -185,6 +230,48 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
         });
     }
 
+    public void databaseInputRating(int rating) {
+
+        String id = movie.getId().toString();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if (currentUser != null) {
+            String uid = currentUser.getUid();
+            FirebaseDatabase database = FirebaseDatabase.getInstance("https://movies-index-c8fc1-default-rtdb.europe-west1.firebasedatabase.app/");
+            DatabaseReference myRefEmail = database.getReference();
+
+            myRefEmail.child("Rate").child(id).child(uid).child("Rating").setValue(rating);
+
+        } else {
+
+        }
+
+    }
+
+    public void databaseReadRating() {
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://movies-index-c8fc1-default-rtdb.europe-west1.firebasedatabase.app/");
+        DatabaseReference myRefEmail = database.getReference("message");
+
+        Log.i("myRef", String.valueOf(myRefEmail));
+
+        myRefEmail.child("message").setValue("Hello, World!");
+        myRefEmail.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                String value = dataSnapshot.getValue(String.class);
+                Log.d(TAG, "Value is: " + value);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w(TAG, "Failed to read value.", error.toException());
+            }
+        });
+    }
 
     public void setProgressBar() {
         CircularProgressIndicator circleProgressBar = activityMoviesInfoBinding.secondaryLayout.circularProgress;
@@ -194,6 +281,51 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
                 circleProgressBar.setProgress(movie.getVoteAverage(), 10.0);
             }
         }, 1500);
+    }
+
+    public void setProgressBarForAppRate(double rating) {
+        CircularProgressIndicator circleProgressBar = activityMoviesInfoBinding.secondaryLayout.circularProgressAppRate;
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                circleProgressBar.setProgress(rating, 10.0);
+            }
+        }, 1500);
+    }
+
+    public double getRatingAverage() {
+        String id = movie.getId().toString();
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance("https://movies-index-c8fc1-default-rtdb.europe-west1.firebasedatabase.app/").getReference();
+        /*databaseReference.child("Rate").child(id).addListenerForSingleValueEvent(new ValueEventListener() {*/
+
+            Query dataQuery = databaseReference.child("Rate").child(id);
+            dataQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    double ratingInt, i = 0, ratingSum = 0;
+                    double avgRating;
+                    if (dataSnapshot.exists()) {
+                        // dataSnapshot is the "issue" node with all children with id 0
+                        for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
+                            Double rating = userSnapshot.child("Rating").getValue(Double.class);
+                            ratingSum += rating;
+                            i++;
+                        }
+                        avgRating = ratingSum/i;
+                        DecimalFormat decimalFormat = new DecimalFormat("#.#");
+
+                        // Преобразование числа с округлением
+                        String formattedNumber = decimalFormat.format(avgRating);
+                        setProgressBarForAppRate(avgRating);
+                    }
+                }
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                }
+            });
+
+        return 0;
     }
 
     public void getFullInformation() {

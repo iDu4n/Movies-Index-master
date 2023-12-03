@@ -29,6 +29,9 @@
     <string name="Register">Register</string>
     <string name="return_to_login">Return to login</string>
     <string name="logout">logout</string>
+    <string name="rate">RATE</string>
+    <string name="rate_film">rate film</string>
+    <string name="int_0_10">int 0-10</string>
 
 
 </resources>

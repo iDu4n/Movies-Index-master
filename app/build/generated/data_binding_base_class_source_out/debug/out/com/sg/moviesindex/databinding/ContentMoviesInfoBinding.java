@@ -4,6 +4,7 @@ package com.sg.moviesindex.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator;
 import br.com.simplepass.loadingbutton.customViews.CircularProgressButton;
 import com.google.android.material.chip.ChipGroup;
+import com.google.android.material.textfield.TextInputEditText;
 import com.sg.moviesindex.R;
 import com.sg.moviesindex.model.tmdb.Movie;
 import com.varunest.sparkbutton.SparkButton;
@@ -35,6 +37,9 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
   public final ImageView button1;
 
   @NonNull
+  public final Button buttonRate;
+
+  @NonNull
   public final TextView casts;
 
   @NonNull
@@ -47,7 +52,13 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
   public final CircularProgressIndicator circularProgress;
 
   @NonNull
+  public final CircularProgressIndicator circularProgressAppRate;
+
+  @NonNull
   public final LinearLayout llMovieRating;
+
+  @NonNull
+  public final TextInputEditText ratingApp;
 
   @NonNull
   public final TextView reviews;
@@ -95,21 +106,25 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
   protected String mLocale;
 
   protected ContentMoviesInfoBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ConstraintLayout ad, CircularProgressButton btnId, ImageView button1, TextView casts,
-      LinearLayout castsLayout, ChipGroup chipGroup, CircularProgressIndicator circularProgress,
-      LinearLayout llMovieRating, TextView reviews, RecyclerView rvCasts, RecyclerView rvReviews,
-      SparkButton sparkButton, TextView tvGenre, TextView tvLanguage, TextView tvMovieTitle,
-      TextView tvOverview, TextView tvPlotsynopsis, TextView tvPopularity, TextView tvReleaseDate,
-      TextView tvStatus) {
+      ConstraintLayout ad, CircularProgressButton btnId, ImageView button1, Button buttonRate,
+      TextView casts, LinearLayout castsLayout, ChipGroup chipGroup,
+      CircularProgressIndicator circularProgress, CircularProgressIndicator circularProgressAppRate,
+      LinearLayout llMovieRating, TextInputEditText ratingApp, TextView reviews,
+      RecyclerView rvCasts, RecyclerView rvReviews, SparkButton sparkButton, TextView tvGenre,
+      TextView tvLanguage, TextView tvMovieTitle, TextView tvOverview, TextView tvPlotsynopsis,
+      TextView tvPopularity, TextView tvReleaseDate, TextView tvStatus) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ad = ad;
     this.btnId = btnId;
     this.button1 = button1;
+    this.buttonRate = buttonRate;
     this.casts = casts;
     this.castsLayout = castsLayout;
     this.chipGroup = chipGroup;
     this.circularProgress = circularProgress;
+    this.circularProgressAppRate = circularProgressAppRate;
     this.llMovieRating = llMovieRating;
+    this.ratingApp = ratingApp;
     this.reviews = reviews;
     this.rvCasts = rvCasts;
     this.rvReviews = rvReviews;

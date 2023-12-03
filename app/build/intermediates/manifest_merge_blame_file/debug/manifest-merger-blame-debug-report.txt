@@ -20,13 +20,13 @@
 13-->D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:7:5-9:38
 14        android:name="android.permission.READ_EXTERNAL_STORAGE"
 14-->D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:8:9-64
-15        android:maxSdkVersion="32" />
+15        android:maxSdkVersion="33" />
 15-->D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:9:9-35
 16    <uses-permission
 16-->D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:10:5-12:38
 17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
 17-->D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:11:9-65
-18        android:maxSdkVersion="29" />
+18        android:maxSdkVersion="33" />
 18-->D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:12:9-35
 19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 19-->D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:13:5-77
@@ -230,121 +230,133 @@
 125                android:value="com.google.firebase.components.ComponentRegistrar" />
 125-->[com.google.firebase:firebase-auth:22.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\c4c5cfe5575842e2aeae6e22f84cae29\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:71:17-82
 126            <meta-data
-126-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\1de188cf954c62c220a82f33182d111a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
-127                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-127-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\1de188cf954c62c220a82f33182d111a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+126-->[com.google.firebase:firebase-database:20.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\a9b04b6aa17198a70b2a0eabf389f063\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
+127                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+127-->[com.google.firebase:firebase-database:20.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\a9b04b6aa17198a70b2a0eabf389f063\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:30:17-120
 128                android:value="com.google.firebase.components.ComponentRegistrar" />
-128-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\1de188cf954c62c220a82f33182d111a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+128-->[com.google.firebase:firebase-database:20.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\a9b04b6aa17198a70b2a0eabf389f063\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:31:17-82
 129            <meta-data
-129-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
-130                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-130-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+129-->[com.google.firebase:firebase-database:20.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\a9b04b6aa17198a70b2a0eabf389f063\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
+130                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+130-->[com.google.firebase:firebase-database:20.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\a9b04b6aa17198a70b2a0eabf389f063\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:33:17-109
 131                android:value="com.google.firebase.components.ComponentRegistrar" />
-131-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
-132        </service>
-133        <service
-133-->[androidx.room:room-runtime:2.6.0-beta01] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\AndroidManifest.xml:24:9-28:63
-134            android:name="androidx.room.MultiInstanceInvalidationService"
-134-->[androidx.room:room-runtime:2.6.0-beta01] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\AndroidManifest.xml:25:13-74
-135            android:directBootAware="true"
-135-->[androidx.room:room-runtime:2.6.0-beta01] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\AndroidManifest.xml:26:13-43
-136            android:exported="false" />
-136-->[androidx.room:room-runtime:2.6.0-beta01] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\AndroidManifest.xml:27:13-37
-137
-138        <provider
-138-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
-139            android:name="com.google.firebase.provider.FirebaseInitProvider"
-139-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
-140            android:authorities="com.sg.moviesindex.firebaseinitprovider"
-140-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+131-->[com.google.firebase:firebase-database:20.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\a9b04b6aa17198a70b2a0eabf389f063\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:34:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\1de188cf954c62c220a82f33182d111a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+133                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+133-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\1de188cf954c62c220a82f33182d111a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\1de188cf954c62c220a82f33182d111a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+136                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+136-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+138        </service>
+139        <service
+139-->[androidx.room:room-runtime:2.6.0-beta01] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\AndroidManifest.xml:24:9-28:63
+140            android:name="androidx.room.MultiInstanceInvalidationService"
+140-->[androidx.room:room-runtime:2.6.0-beta01] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\AndroidManifest.xml:25:13-74
 141            android:directBootAware="true"
-141-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
-142            android:exported="false"
-142-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
-143            android:initOrder="100" />
-143-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
-144
-145        <activity
-145-->[com.google.android.gms:play-services-base:18.0.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3c82a6c978b371f28c43af08018c8944\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-146            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-146-->[com.google.android.gms:play-services-base:18.0.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3c82a6c978b371f28c43af08018c8944\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-147            android:exported="false"
-147-->[com.google.android.gms:play-services-base:18.0.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3c82a6c978b371f28c43af08018c8944\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-148            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-148-->[com.google.android.gms:play-services-base:18.0.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3c82a6c978b371f28c43af08018c8944\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-149
-150        <provider
-150-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-151            android:name="androidx.startup.InitializationProvider"
-151-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
-152            android:authorities="com.sg.moviesindex.androidx-startup"
-152-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
-153            android:exported="false" >
-153-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
-154            <meta-data
-154-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-155                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-155-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
-156                android:value="androidx.startup" />
-156-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
-157            <meta-data
-157-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\02ffa5138e25a88374e993c521fbf237\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-158                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-158-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\02ffa5138e25a88374e993c521fbf237\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-159                android:value="androidx.startup" />
-159-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\02ffa5138e25a88374e993c521fbf237\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+141-->[androidx.room:room-runtime:2.6.0-beta01] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\AndroidManifest.xml:26:13-43
+142            android:exported="false" />
+142-->[androidx.room:room-runtime:2.6.0-beta01] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\7577f07cd8757ff555e3f2a8c68dfb18\transformed\room-runtime-2.6.0-beta01\AndroidManifest.xml:27:13-37
+143
+144        <provider
+144-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+145            android:name="com.google.firebase.provider.FirebaseInitProvider"
+145-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+146            android:authorities="com.sg.moviesindex.firebaseinitprovider"
+146-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+147            android:directBootAware="true"
+147-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+148            android:exported="false"
+148-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+149            android:initOrder="100" />
+149-->[com.google.firebase:firebase-common:20.4.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\4d26da62f89a61d58ad6e9aca3e7adcd\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+150
+151        <activity
+151-->[com.google.android.gms:play-services-base:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\83c4298f611b597d3ddca488fcad0b90\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+152            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+152-->[com.google.android.gms:play-services-base:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\83c4298f611b597d3ddca488fcad0b90\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+153            android:exported="false"
+153-->[com.google.android.gms:play-services-base:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\83c4298f611b597d3ddca488fcad0b90\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+154            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+154-->[com.google.android.gms:play-services-base:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\83c4298f611b597d3ddca488fcad0b90\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+155
+156        <provider
+156-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+157            android:name="androidx.startup.InitializationProvider"
+157-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+158            android:authorities="com.sg.moviesindex.androidx-startup"
+158-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+159            android:exported="false" >
+159-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
 160            <meta-data
-160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-161                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+160-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+161                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+161-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
 162                android:value="androidx.startup" />
-162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-163        </provider>
-164
-165        <meta-data
-165-->[com.google.android.gms:play-services-basement:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\456d0e43cfc638357ea512a9ebc444d3\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-166            android:name="com.google.android.gms.version"
-166-->[com.google.android.gms:play-services-basement:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\456d0e43cfc638357ea512a9ebc444d3\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-167            android:value="@integer/google_play_services_version" />
-167-->[com.google.android.gms:play-services-basement:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\456d0e43cfc638357ea512a9ebc444d3\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-168
-169        <receiver
-169-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-170            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-171            android:directBootAware="false"
-171-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-172            android:enabled="true"
-172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-173            android:exported="true"
-173-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-174            android:permission="android.permission.DUMP" >
-174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-175            <intent-filter>
-175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-176                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-177            </intent-filter>
-178            <intent-filter>
-178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-179                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-180            </intent-filter>
+162-->[androidx.emoji2:emoji2:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\eeffb3478a3e6e71b699ff77b2d59f08\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+163            <meta-data
+163-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\02ffa5138e25a88374e993c521fbf237\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+164                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+164-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\02ffa5138e25a88374e993c521fbf237\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+165                android:value="androidx.startup" />
+165-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\02ffa5138e25a88374e993c521fbf237\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+166            <meta-data
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+167                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+167-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+168                android:value="androidx.startup" />
+168-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+169        </provider>
+170
+171        <meta-data
+171-->[com.google.android.gms:play-services-basement:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\456d0e43cfc638357ea512a9ebc444d3\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+172            android:name="com.google.android.gms.version"
+172-->[com.google.android.gms:play-services-basement:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\456d0e43cfc638357ea512a9ebc444d3\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+173            android:value="@integer/google_play_services_version" />
+173-->[com.google.android.gms:play-services-basement:18.1.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\456d0e43cfc638357ea512a9ebc444d3\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+174
+175        <receiver
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+176            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+177            android:directBootAware="false"
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+178            android:enabled="true"
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+179            android:exported="true"
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+180            android:permission="android.permission.DUMP" >
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 181            <intent-filter>
-181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-182                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+182                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 183            </intent-filter>
 184            <intent-filter>
-184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-185                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+185                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 186            </intent-filter>
-187        </receiver>
-188    </application>
-189
-190</manifest>
+187            <intent-filter>
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+188                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+189            </intent-filter>
+190            <intent-filter>
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+191                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\8c894a489851b33f98bc31e1a1312405\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+192            </intent-filter>
+193        </receiver>
+194    </application>
+195
+196</manifest>

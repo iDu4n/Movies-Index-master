@@ -4,12 +4,12 @@
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable_tmdb.jpeg.flat",
-        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable\\tmdb.jpeg"
-    },
-    {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable-mdpi_baseline_arrow_forward_black_36.png.flat",
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable-mdpi\\baseline_arrow_forward_black_36.png"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable_tmdb.jpeg.flat",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable\\tmdb.jpeg"
     },
     {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\layout_content_movies_info.xml.flat",
@@ -88,12 +88,12 @@
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable-xxxhdpi\\baseline_arrow_forward_black_24.png"
     },
     {
-        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\layout_review_list_item.xml.flat",
-        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\review_list_item.xml"
-    },
-    {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable-mdpi_baseline_arrow_forward_black_18.png.flat",
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable-mdpi\\baseline_arrow_forward_black_18.png"
+    },
+    {
+        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\layout_review_list_item.xml.flat",
+        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\review_list_item.xml"
     },
     {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\menu_activity_main_drawer.xml.flat",
@@ -106,10 +106,6 @@
     {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\layout_content_main.xml.flat",
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\content_main.xml"
-    },
-    {
-        "merged": "com.sg.moviesindex.app-merged_res-49:/layout_nav_header_main.xml.flat",
-        "source": "com.sg.moviesindex.app-main-51:/layout/nav_header_main.xml"
     },
     {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable-hdpi_baseline_arrow_forward_black_18.png.flat",
@@ -244,10 +240,6 @@
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable-xhdpi\\baseline_arrow_forward_black_18.png"
     },
     {
-        "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable_india.png.flat",
-        "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable\\india.png"
-    },
-    {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable_ic_heart_on.png.flat",
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable\\ic_heart_on.png"
     },
@@ -302,6 +294,10 @@
     {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable_ic_cloud_download_black_48dp.xml.flat",
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable\\ic_cloud_download_black_48dp.xml"
+    },
+    {
+        "merged": "com.sg.moviesindex.app-merged_res-49:/layout_content_movies_info.xml.flat",
+        "source": "com.sg.moviesindex.app-main-51:/layout/content_movies_info.xml"
     },
     {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable-mdpi_baseline_arrow_forward_black_20.png.flat",

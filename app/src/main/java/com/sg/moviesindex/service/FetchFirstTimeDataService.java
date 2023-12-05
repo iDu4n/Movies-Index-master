@@ -100,14 +100,14 @@ public class FetchFirstTimeDataService implements Parcelable {
             }
             fetchData();
         } else if (a == 1 || a == 2) {
-            String[] x = {"All", "India", "USA", "UK"};
+            String[] x = {"All", "Russia", "USA", "UK"};
             Dialog dialog = new MaterialAlertDialogBuilder(context).setTitle("Choose a Region").setSingleChoiceItems(x, -1, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     if (which == 0) {
                         MainPage.region = "";
                     } else if (which == 1) {
-                        MainPage.region = "IN";
+                        MainPage.region = "RU";
                     } else if (which == 2) {
                         MainPage.region = "US";
                     } else {

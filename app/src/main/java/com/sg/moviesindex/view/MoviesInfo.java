@@ -156,7 +156,7 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
                     return;
                 }
 
-                if (ratingString.equals("0") || ratingString.equals("1") || ratingString.equals("2") || ratingString.equals("3") || ratingString.equals("4") || ratingString.equals("5") || ratingString.equals("6") || ratingString.equals("7") || ratingString.equals("8") || ratingString.equals("9") || ratingString.equals("10")) {
+                if (ratingString.equals("1") || ratingString.equals("2") || ratingString.equals("3") || ratingString.equals("4") || ratingString.equals("5") || ratingString.equals("6") || ratingString.equals("7") || ratingString.equals("8") || ratingString.equals("9") || ratingString.equals("10")) {
                     int ratingInt = Integer.parseInt(ratingString);
                     databaseInputRating(ratingInt);
                     Toast.makeText(MoviesInfo.this, "Successful", Toast.LENGTH_SHORT).show();
@@ -268,10 +268,12 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
 
         if (currentUser != null) {
             String uid = currentUser.getUid();
+            String movieName = movie.getOriginalTitle();
             FirebaseDatabase database = FirebaseDatabase.getInstance("https://movies-index-c8fc1-default-rtdb.europe-west1.firebasedatabase.app/");
-            DatabaseReference myRefEmail = database.getReference();
+            DatabaseReference myRef = database.getReference();
 
-            myRefEmail.child("Rate").child(id).child(uid).child("Rating").setValue(rating);
+            myRef.child("Rate").child(id).child(uid).child("Rating").setValue(rating);
+            myRef.child("Rate").child(id).child("title").setValue(movieName);
 
         } else {
 
@@ -288,12 +290,14 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
         if (currentUser != null) {
             String uid = currentUser.getUid();
             String email = currentUser.getEmail();
+            String movieName = movie.getOriginalTitle();
             FirebaseDatabase database = FirebaseDatabase.getInstance("https://movies-index-c8fc1-default-rtdb.europe-west1.firebasedatabase.app/");
-            DatabaseReference myRefEmail = database.getReference();
+            DatabaseReference myRef = database.getReference();
 
 
-            myRefEmail.child("Review").child(id).child(uid).child("review").setValue(review);
-            myRefEmail.child("Review").child(id).child(uid).child("email").setValue(email);
+            myRef.child("Review").child(id).child(uid).child("review").setValue(review);
+            myRef.child("Review").child(id).child(uid).child("email").setValue(email);
+            myRef.child("Review").child(id).child("title").setValue(movieName);
 
         } else {
 
@@ -360,9 +364,11 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
                     if (dataSnapshot.exists()) {
                         // dataSnapshot is the "issue" node with all children with id 0
                         for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
-                            Double rating = userSnapshot.child("Rating").getValue(Double.class);
-                            ratingSum += rating;
-                            i++;
+                            if (!userSnapshot.getKey().equals("title")) {
+                                Double rating = userSnapshot.child("Rating").getValue(Double.class);
+                                ratingSum += rating;
+                                i++;
+                            }
                         }
                         avgRating = ratingSum/i;
                         DecimalFormat decimalFormat = new DecimalFormat("#.#");
@@ -396,13 +402,15 @@ public class MoviesInfo extends AppCompatActivity implements TorrentFetcherServi
                 List<ReviewApp> reviewList = new ArrayList<>();
 
                 for (DataSnapshot reviewSnapshot : dataSnapshot.getChildren()) {
-                    String email = reviewSnapshot.child("email").getValue(String.class);
+                    if (!reviewSnapshot.getKey().equals("title")) {
+                        String email = reviewSnapshot.child("email").getValue(String.class);
 
-                    String userId = reviewSnapshot.getKey();
-                    String reviewText = reviewSnapshot.child("review").getValue(String.class);
+                        String userId = reviewSnapshot.getKey();
+                        String reviewText = reviewSnapshot.child("review").getValue(String.class);
 
-                    ReviewApp review = new ReviewApp(email, reviewText);
-                    reviewList.add(review);
+                        ReviewApp review = new ReviewApp(email, reviewText);
+                        reviewList.add(review);
+                    }
                 }
 
                 // Отобразить отзывы в списке

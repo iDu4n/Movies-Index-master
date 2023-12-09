@@ -34,6 +34,10 @@
     <string name="int_0_10">int 0-10</string>
     <string name="write_review_for_the_movie">write review for the movie</string>
     <string name="review">Review</string>
+    <string name="register">Register</string>
+    <string name="movies_index_register">Movies-Index</string>
+    <string name="login_page">Login</string>
+    <string name="register_now">Register now</string>
 
 
 </resources>

@@ -18,7 +18,6 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 import antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator;
-import br.com.simplepass.loadingbutton.customViews.CircularProgressButton;
 import com.google.android.material.chip.ChipGroup;
 import com.google.android.material.textfield.TextInputEditText;
 import com.sg.moviesindex.R;
@@ -30,9 +29,6 @@ import java.lang.Object;
 public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
   @NonNull
   public final ConstraintLayout ad;
-
-  @NonNull
-  public final CircularProgressButton btnId;
 
   @NonNull
   public final ImageView button1;
@@ -116,8 +112,8 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
   protected String mLocale;
 
   protected ContentMoviesInfoBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ConstraintLayout ad, CircularProgressButton btnId, ImageView button1, Button buttonRate,
-      Button buttonReview, TextView casts, LinearLayout castsLayout, ChipGroup chipGroup,
+      ConstraintLayout ad, ImageView button1, Button buttonRate, Button buttonReview,
+      TextView casts, LinearLayout castsLayout, ChipGroup chipGroup,
       CircularProgressIndicator circularProgress, CircularProgressIndicator circularProgressAppRate,
       LinearLayout llMovieRating, TextInputEditText ratingApp, TextInputEditText reviewApp,
       TextView reviews, ListView reviewsListView, RecyclerView rvCasts, RecyclerView rvReviews,
@@ -126,7 +122,6 @@ public abstract class ContentMoviesInfoBinding extends ViewDataBinding {
       TextView tvStatus) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ad = ad;
-    this.btnId = btnId;
     this.button1 = button1;
     this.buttonRate = buttonRate;
     this.buttonReview = buttonReview;

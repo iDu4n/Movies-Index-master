@@ -17,7 +17,6 @@ import com.sg.moviesindex.databinding.FragmentMoviesBindingImpl;
 import com.sg.moviesindex.databinding.MovieListItemBindingImpl;
 import com.sg.moviesindex.databinding.NavHeaderMainBindingImpl;
 import com.sg.moviesindex.databinding.ReviewListItemBindingImpl;
-import com.sg.moviesindex.databinding.TorrentListItemsLayoutBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -51,9 +50,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_REVIEWLISTITEM = 11;
 
-  private static final int LAYOUT_TORRENTLISTITEMSLAYOUT = 12;
-
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(12);
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(11);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.sg.moviesindex.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
@@ -67,7 +64,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.sg.moviesindex.R.layout.movie_list_item, LAYOUT_MOVIELISTITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.sg.moviesindex.R.layout.nav_header_main, LAYOUT_NAVHEADERMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.sg.moviesindex.R.layout.review_list_item, LAYOUT_REVIEWLISTITEM);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.sg.moviesindex.R.layout.torrent_list_items_layout, LAYOUT_TORRENTLISTITEMSLAYOUT);
   }
 
   @Override
@@ -145,12 +141,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for review_list_item is invalid. Received: " + tag);
         }
-        case  LAYOUT_TORRENTLISTITEMSLAYOUT: {
-          if ("layout/torrent_list_items_layout_0".equals(tag)) {
-            return new TorrentListItemsLayoutBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for torrent_list_items_layout is invalid. Received: " + tag);
-        }
       }
     }
     return null;
@@ -196,7 +186,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(31);
+    static final SparseArray<String> sKeys = new SparseArray<String>(29);
 
     static {
       sKeys.put(0, "_all");
@@ -224,17 +214,15 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put(22, "reviewsList");
       sKeys.put(23, "runtime");
       sKeys.put(24, "status");
-      sKeys.put(25, "stringBuilder");
-      sKeys.put(26, "tagline");
-      sKeys.put(27, "title");
-      sKeys.put(28, "torrent");
-      sKeys.put(29, "video");
-      sKeys.put(30, "voteAverage");
+      sKeys.put(25, "tagline");
+      sKeys.put(26, "title");
+      sKeys.put(27, "video");
+      sKeys.put(28, "voteAverage");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(12);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(11);
 
     static {
       sKeys.put("layout/activity_main_0", com.sg.moviesindex.R.layout.activity_main);
@@ -248,7 +236,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/movie_list_item_0", com.sg.moviesindex.R.layout.movie_list_item);
       sKeys.put("layout/nav_header_main_0", com.sg.moviesindex.R.layout.nav_header_main);
       sKeys.put("layout/review_list_item_0", com.sg.moviesindex.R.layout.review_list_item);
-      sKeys.put("layout/torrent_list_items_layout_0", com.sg.moviesindex.R.layout.torrent_list_items_layout);
     }
   }
 }

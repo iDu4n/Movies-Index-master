@@ -1906,6 +1906,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle_angles
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2004,7 +2005,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable reg_background
 drawable rounded_button_background
+drawable rounded_corners_background
 drawable shape_default
 drawable test_custom_background
 drawable test_level_drawable
@@ -2124,7 +2127,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id btn_id
 id btn_login
 id btn_register
 id butt
@@ -2279,7 +2281,6 @@ id inward
 id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
-id ivDownloadButton
 id ivImage
 id ivMovie
 id ivMovieLarge
@@ -2537,7 +2538,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView2
-id textView4
 id textWatcher
 id text_input_end_icon
 id text_input_error_icon
@@ -2570,25 +2570,19 @@ id triangle
 id tvCharacter
 id tvGender
 id tvGenre
-id tvLLSP
 id tvLanguage
 id tvMovieTitle
 id tvName
 id tvNoMovies
 id tvOverview
-id tvPeers
 id tvPlotsynopsis
 id tvPopularity
-id tvQuality
 id tvRating
 id tvReleaseDate
 id tvReviewContent
 id tvReviewName
-id tvSeeds
-id tvSize
 id tvStatus
 id tvTitle
-id tvType
 id unchecked
 id uniform
 id unlabeled
@@ -2809,7 +2803,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout torrent_list_items_layout
 menu activity_main_drawer
 menu search_view
 mipmap ic_launcher
@@ -2904,6 +2897,7 @@ string in_india
 string int_0_10
 string item_view_role_description
 string login
+string login_page
 string logout
 string made_with_love
 string material_clock_display_divider
@@ -2922,6 +2916,7 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string movies_index
+string movies_index_register
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
@@ -2972,6 +2967,8 @@ string popular_movies
 string project_id
 string rate
 string rate_film
+string register
+string register_now
 string return_to_login
 string review
 string search_any_movie

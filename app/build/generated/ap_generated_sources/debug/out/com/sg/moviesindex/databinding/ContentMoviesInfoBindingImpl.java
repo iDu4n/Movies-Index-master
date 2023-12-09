@@ -21,19 +21,18 @@ public class ContentMoviesInfoBindingImpl extends ContentMoviesInfoBinding  {
         sViewsWithIds.put(R.id.ratingApp, 11);
         sViewsWithIds.put(R.id.buttonRate, 12);
         sViewsWithIds.put(R.id.spark_button, 13);
-        sViewsWithIds.put(R.id.btn_id, 14);
-        sViewsWithIds.put(R.id.tvOverview, 15);
-        sViewsWithIds.put(R.id.tvGenre, 16);
-        sViewsWithIds.put(R.id.chip_group, 17);
-        sViewsWithIds.put(R.id.castsLayout, 18);
-        sViewsWithIds.put(R.id.casts, 19);
-        sViewsWithIds.put(R.id.button1, 20);
-        sViewsWithIds.put(R.id.rvCasts, 21);
-        sViewsWithIds.put(R.id.reviews, 22);
-        sViewsWithIds.put(R.id.reviewApp, 23);
-        sViewsWithIds.put(R.id.buttonReview, 24);
-        sViewsWithIds.put(R.id.rvReviews, 25);
-        sViewsWithIds.put(R.id.reviewsListView, 26);
+        sViewsWithIds.put(R.id.tvOverview, 14);
+        sViewsWithIds.put(R.id.tvGenre, 15);
+        sViewsWithIds.put(R.id.chip_group, 16);
+        sViewsWithIds.put(R.id.castsLayout, 17);
+        sViewsWithIds.put(R.id.casts, 18);
+        sViewsWithIds.put(R.id.button1, 19);
+        sViewsWithIds.put(R.id.rvCasts, 20);
+        sViewsWithIds.put(R.id.reviews, 21);
+        sViewsWithIds.put(R.id.reviewApp, 22);
+        sViewsWithIds.put(R.id.buttonReview, 23);
+        sViewsWithIds.put(R.id.rvReviews, 24);
+        sViewsWithIds.put(R.id.reviewsListView, 25);
     }
     // views
     @NonNull
@@ -44,32 +43,31 @@ public class ContentMoviesInfoBindingImpl extends ContentMoviesInfoBinding  {
     // Inverse Binding Event Handlers
 
     public ContentMoviesInfoBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 27, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 26, sIncludes, sViewsWithIds));
     }
     private ContentMoviesInfoBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 1
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[7]
-            , (br.com.simplepass.loadingbutton.customViews.CircularProgressButton) bindings[14]
-            , (android.widget.ImageView) bindings[20]
+            , (android.widget.ImageView) bindings[19]
             , (android.widget.Button) bindings[12]
-            , (android.widget.Button) bindings[24]
-            , (android.widget.TextView) bindings[19]
-            , (android.widget.LinearLayout) bindings[18]
-            , (com.google.android.material.chip.ChipGroup) bindings[17]
+            , (android.widget.Button) bindings[23]
+            , (android.widget.TextView) bindings[18]
+            , (android.widget.LinearLayout) bindings[17]
+            , (com.google.android.material.chip.ChipGroup) bindings[16]
             , (antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator) bindings[9]
             , (antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator) bindings[10]
             , (android.widget.LinearLayout) bindings[8]
             , (com.google.android.material.textfield.TextInputEditText) bindings[11]
-            , (com.google.android.material.textfield.TextInputEditText) bindings[23]
-            , (android.widget.TextView) bindings[22]
-            , (android.widget.ListView) bindings[26]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[21]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[25]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[22]
+            , (android.widget.TextView) bindings[21]
+            , (android.widget.ListView) bindings[25]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[20]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[24]
             , (com.varunest.sparkbutton.SparkButton) bindings[13]
-            , (android.widget.TextView) bindings[16]
+            , (android.widget.TextView) bindings[15]
             , (android.widget.TextView) bindings[5]
             , (android.widget.TextView) bindings[1]
-            , (android.widget.TextView) bindings[15]
+            , (android.widget.TextView) bindings[14]
             , (android.widget.TextView) bindings[6]
             , (android.widget.TextView) bindings[4]
             , (android.widget.TextView) bindings[3]

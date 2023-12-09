@@ -51,15 +51,11 @@ public class BR {
 
   public static final int status = 24;
 
-  public static final int stringBuilder = 25;
+  public static final int tagline = 25;
 
-  public static final int tagline = 26;
+  public static final int title = 26;
 
-  public static final int title = 27;
+  public static final int video = 27;
 
-  public static final int torrent = 28;
-
-  public static final int video = 29;
-
-  public static final int voteAverage = 30;
+  public static final int voteAverage = 28;
 }

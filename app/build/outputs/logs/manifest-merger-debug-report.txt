@@ -11,10 +11,10 @@ INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManife
 	android:name
 		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:43:13-62
 manifest
-ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
+ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
 MERGED from [androidx.databinding:databinding-adapters:8.0.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3932ae4a1f9abedcc9faab0400f492cc\transformed\databinding-adapters-8.0.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.0.2] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3432eea0f518045ddd858dd6123afadb\transformed\databinding-runtime-8.0.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth:22.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\c4c5cfe5575842e2aeae6e22f84cae29\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:17:1-75:12
@@ -100,22 +100,22 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Program Files\Android\An
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\adc738eba072e4ee422a45bcaebb1cbc\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\651e6b64fa825a453f170ac9893944b6\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\3b0398fa49e4b936b4fb310be4ef24b0\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
-INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
 	package
 		INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
+		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
 		INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
+		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
 		INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-71:12
+		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:1-69:12
 		INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:2:11-69
@@ -156,7 +156,7 @@ ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.
 	android:name
 		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:13:22-74
 application
-ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:15:5-69:19
+ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:15:5-67:19
 MERGED from [com.google.firebase:firebase-auth:22.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\c4c5cfe5575842e2aeae6e22f84cae29\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:22.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\c4c5cfe5575842e2aeae6e22f84cae29\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Program Files\Android\Android Studio\jre\caches\transforms-3\a9b04b6aa17198a70b2a0eabf389f063\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
@@ -236,7 +236,7 @@ ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.
 activity#com.sg.moviesindex.view.MainPage
 ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:30:9-40:20
 	android:label
-		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:33:13-34
+		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:33:13-41
 	android:exported
 		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:32:13-36
 	android:theme
@@ -271,16 +271,12 @@ ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.
 		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:62:13-44
 	android:name
 		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:60:13-44
-service#com.sg.moviesindex.service.TorrentDownloaderService
-ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:64:9-69
-	android:name
-		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:64:18-66
 meta-data#preloaded_fonts
-ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:66:9-68:57
+ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:64:9-66:57
 	android:resource
-		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:68:13-54
+		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:66:13-54
 	android:name
-		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:67:13-43
+		ADDED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml:65:13-43
 uses-sdk
 INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android Projects\Movies-Index-master\app\src\main\AndroidManifest.xml

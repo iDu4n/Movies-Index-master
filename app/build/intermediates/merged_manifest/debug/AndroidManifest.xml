@@ -39,12 +39,12 @@
         <activity
             android:name="com.sg.moviesindex.view.RegistrationActivity"
             android:exported="true"
-            android:label="Registration"
+            android:label="Movies-Index"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.sg.moviesindex.view.MainPage"
             android:exported="true"
-            android:label="Login"
+            android:label="Movies-Index"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -72,8 +72,6 @@
             android:name="com.sg.moviesindex.view.MoviesInfo"
             android:label="@string/title_activity_movies_info"
             android:theme="@style/AppTheme" />
-
-        <service android:name="com.sg.moviesindex.service.TorrentDownloaderService" />
 
         <meta-data
             android:name="preloaded_fonts"

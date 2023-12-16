@@ -26,12 +26,14 @@
             android:exported="true"
             android:label="Movies-Index"
             android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
             />
         <activity
             android:name=".view.MainPage"
             android:exported="true"
             android:label="Movies-Index"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
@@ -53,13 +55,15 @@
             android:name=".view.LoginActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
 
 
         <activity
             android:name=".view.MoviesInfo"
             android:label="@string/title_activity_movies_info"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="preloaded_fonts"

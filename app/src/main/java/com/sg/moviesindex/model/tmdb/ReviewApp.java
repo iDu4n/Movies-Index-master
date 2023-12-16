@@ -7,8 +7,6 @@ public class ReviewApp {
     private String userId;
     private String reviewText;
 
-    // Конструктор, геттеры и сеттеры
-
     public ReviewApp(String userId, String reviewText) {
         this.userId = userId;
         this.reviewText = reviewText;

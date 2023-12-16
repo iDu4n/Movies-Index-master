@@ -207,13 +207,6 @@ public class MoviesInfo extends AppCompatActivity {
         getRatingAverage();
         getCasts();
 
-        /*button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-            }
-        });*/
-
         activityMoviesInfoBinding.secondaryLayout.sparkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -295,15 +288,12 @@ public class MoviesInfo extends AppCompatActivity {
         myRefEmail.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
                 String value = dataSnapshot.getValue(String.class);
                 Log.d(TAG, "Value is: " + value);
             }
 
             @Override
             public void onCancelled(DatabaseError error) {
-                // Failed to read value
                 Log.w(TAG, "Failed to read value.", error.toException());
             }
         });
@@ -342,7 +332,6 @@ public class MoviesInfo extends AppCompatActivity {
                     double ratingInt, i = 0, ratingSum = 0;
                     double avgRating;
                     if (dataSnapshot.exists()) {
-                        // dataSnapshot is the "issue" node with all children with id 0
                         for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
                             if (!userSnapshot.getKey().equals("title")) {
                                 Double rating = userSnapshot.child("Rating").getValue(Double.class);
@@ -353,7 +342,6 @@ public class MoviesInfo extends AppCompatActivity {
                         avgRating = ratingSum/i;
                         DecimalFormat decimalFormat = new DecimalFormat("#.#");
 
-                        // Преобразование числа с округлением
                         String formattedNumber = decimalFormat.format(avgRating);
                         setProgressBarForAppRate(avgRating);
                     }
@@ -393,22 +381,19 @@ public class MoviesInfo extends AppCompatActivity {
                     }
                 }
 
-                // Отобразить отзывы в списке
                 displayReviews(reviewList);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                // Обработка ошибок при получении данных
+
             }
         });
     }
 
     private void displayReviews(List<ReviewApp> reviewList) {
-        // Создать адаптер для отображения данных в ListView
         ArrayAdapter<ReviewApp> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, reviewList);
 
-        // Установить адаптер в ListView
         reviewsListView.setAdapter(adapter);
     }
 

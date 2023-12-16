@@ -32,10 +32,6 @@
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\font\\montserrat.xml"
     },
     {
-        "merged": "com.sg.moviesindex.app-merged_res-49:/layout_activity_registration.xml.flat",
-        "source": "com.sg.moviesindex.app-main-51:/layout/activity_registration.xml"
-    },
-    {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\drawable_ic_heart_off.png.flat",
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\drawable\\ic_heart_off.png"
     },
@@ -262,6 +258,10 @@
     {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\layout_fragment_favourite_movies.xml.flat",
         "source": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-main-51:\\layout\\fragment_favourite_movies.xml"
+    },
+    {
+        "merged": "com.sg.moviesindex.app-merged_res-49:/layout_activity_movies_info.xml.flat",
+        "source": "com.sg.moviesindex.app-main-51:/layout/activity_movies_info.xml"
     },
     {
         "merged": "C:\\Program Files\\Android\\Android Studio\\jre\\daemon\\8.4\\com.sg.moviesindex.app-merged_res-49:\\layout_cast_list_item.xml.flat",

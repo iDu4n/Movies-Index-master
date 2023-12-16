@@ -34,17 +34,18 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.sg.moviesindex.view.RegistrationActivity"
             android:exported="true"
             android:label="Movies-Index"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.sg.moviesindex.view.MainPage"
             android:exported="true"
             android:label="Movies-Index"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,10 +68,12 @@
             android:name="com.sg.moviesindex.view.LoginActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.sg.moviesindex.view.MoviesInfo"
             android:label="@string/title_activity_movies_info"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
         <meta-data
